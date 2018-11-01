@@ -1,49 +1,38 @@
-.main-container{
-    background-image: url("../img/world-map.png");
-    height: 1000px;
-    width: 100%;
-    background-size: cover;
-    background-position: top;
-    overflow-x: hidden;
+body{
+    background-image: url("../img/space.jpg");
+    overflow: hidden;
 }
-.head{
-    letter-spacing: 4px;
-    font-family: sans-serif;
-    text-align: center;
-    font-weight: bold;
+.orbit{
+    margin: 30px auto;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    border: 7px solid white;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-name: or;
+    animation-timing-function: linear;
 }
-.sub-head{
-    letter-spacing: 2px;
-    font-family: cursive;
-    text-align: center;
-    font-style: italic;
-    font-weight: normal;
+.sun{
+    position: relative;
+    top: 40%;
+    left: 40%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: yellow;
 }
-.main-list{
-    text-align: center;
-    font-style: italic;
-    list-style: none;
+.mercury{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #ff0003;
 }
-a:link {
-    color: green;
-    background-color: transparent;
-    text-decoration: none;
-}
+@keyframes or {
+    from {
+        transform: rotate(0deg);
+    } to {
+          transform: rotate(360deg);
+      }
 
-a:visited {
-    color: pink;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
-}
-
-a:active {
-    color: yellow;
-    background-color: transparent;
-    text-decoration: underline
 }
