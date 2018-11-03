@@ -12,21 +12,35 @@ body{
     animation-duration: 6s;
     animation-name: or;
     animation-timing-function: linear;
+    /*animation-play-state: paused;*/
 }
+.orbit:hover{
+    animation-play-state: paused;
+}
+
 .sun{
-    position: relative;
-    top: 40%;
-    left: 40%;
+    position: absolute;
+    top: 230px;
+    left: 46%;
     height: 100px;
     width: 100px;
     border-radius: 50%;
     background-color: yellow;
 }
+.sun:hover{
+    animation-play-state: running;
+    transform: scale(2);
+}
 .mercury{
+    position: relative;
+    left: 100px;
     height: 50px;
     width: 50px;
     border-radius: 50%;
     background-color: #ff0003;
+}
+.mercury:hover{
+    transform: scale(2);
 }
 @keyframes or {
     from {
