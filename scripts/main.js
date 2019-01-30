@@ -8,23 +8,23 @@ $( document ).ready(function() {
            url: "https://mainacademydemo1.azurewebsites.net/api/User/Login",
            data: user
        })
-           .done(function( msg ) {
+          .done(function( msg ) {
           console.log(msg);
            });
    });
    // RUSER REGISTER
     $("#register").click(function () {
         var globalObject={};
-        // let username = $("#username").val();
-        // let phone = $("#phone").val();
-        // let addressLine1 = $("#addressLine1").val();
-        // let password = $("#password1").val();
+        let username = $("#username").val();
+        let phone = $("#phone").val();
+        let addressLine1 = $("#addressLine1").val();
+        let password = $("#password1").val();
 
-        let username = "khrystyna rymar";
-        let phone = "123-456-7890";
-        let email = "reyerry@hmai.yu";
-        let addressLine1 = "Bandery 33";
-        let password ="Kh2ertyu";
+        // let username = "khrystyna rymar";
+        // let phone = "123-456-7890";
+        // let email = "reyerry@hmai.yu";
+        // let addressLine1 = "Bandery 33";
+        // let password ="Kh2ertyu";
 
         let conPassword = $("#confirmpassword").val();
         validate(username,phone,addressLine1, password,conPassword,email);
@@ -45,8 +45,8 @@ $( document ).ready(function() {
         $.ajax({
             method: "POST",
             url: "https://mainacademydemo1.azurewebsites.net/api/User/Register?" + jQuery.param({password:globalObject.password}),
-            contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
-            data:globalObject.user,
+            contentType: 'application/json; charset=utf-8',
+            data:JSON.stringify(globalObject.user),
         })
             .done(function (msg) {
                 console.log(msg);
@@ -59,7 +59,6 @@ $( document ).ready(function() {
                 globalObject.user.phone = phone;
                 globalObject.user.addressLine1 = addressLine1;
                 globalObject.user.addressLine2 = addressLine1;
-                
                 globalObject.password = password;
             } else{
                 return false;
@@ -84,6 +83,20 @@ $( document ).ready(function() {
             }
             return true;
         }
+    });
+    // GET ALL USERS
+    $("#allUsers").click(function () {
+        $.ajax({
+            method: "GET",
+            url: "https://mainacademydemo1.azurewebsites.net/api/User"
+        })
+            .done(function( users ) {
+                var tableBody = $("#usersTable");
+                for(var i=0; i<=users.length; i++){
+                    tableBody.append("<tr><td>" + users[i].username + "</td><td>"+ users[i].email+"</td><td>"+ users[i].phone+"</td></tr>");
+                }
+                console.log(users);
+            });
     })
 });
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	 <meta charset="utf-8">
+    <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>LESS</title>
     <link rel="stylesheet" href="styles/styles.css">
@@ -11,12 +11,14 @@
 </head>
 <body>
 <div class="container">
-    <!--<div class="logIn centered">-->
-        <!--<input id="email">-->
-        <!--<input id="password2">-->
-        <!--<button id="button">sendData</button>-->
-    <!--</div>-->
+    <h2>LOGIN</h2>
+    <div class="logIn centered">
+        <input id="email">
+        <input id="password2">
+        <button id="button">sendData</button>
+    </div>
     <div class="register">
+        <h2>REGISTER</h2>
         <div>
             <input class="space" id="username" >
             <span class="span-red" id="username-span"></span>
@@ -39,6 +41,20 @@
         </div>
         <button class="space" id="register">Register</button>
     </div>
+
+</div>
+<div class="container">
+    <h2>Get All Users</h2>
+    <button id="allUsers">Get All Users</button>
+    <table>
+        <tr>
+            <th>User Name </th>
+            <th>Email </th>
+            <th>Phone</th>
+        </tr>
+        <tbody id="usersTable">
+        </tbody>
+    </table>
 </div>
 
 <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
