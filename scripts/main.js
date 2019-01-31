@@ -91,12 +91,25 @@ $( document ).ready(function() {
             url: "https://mainacademydemo1.azurewebsites.net/api/User"
         })
             .done(function( users ) {
+                if(users === [] || users === null || users.length ===0){
+                    return;
+                } else
                 var tableBody = $("#usersTable");
-                for(var i=0; i<=users.length; i++){
-                    tableBody.append("<tr><td>" + users[i].username + "</td><td>"+ users[i].email+"</td><td>"+ users[i].phone+"</td></tr>");
+                tableBody.empty();
+                for(var i=0; i<users.length; i++){
+                    tableBody.append("<tr><td>" + users[i].username + "</td><td>"+
+                        users[i].email+"</td><td>"+
+                        users[i].phone+"</td><td><button class='adressBtn' id='"+users[i].addressLine1+"'>Show Adress</button></td></tr>");
                 }
-                console.log(users);
+                var allButtons = $(".adressBtn");
+                for(var j=0; j<allButtons.length; j++){
+                    allButtons[j].addEventListener("click", getBtn);
+                }
+                function getBtn(){
+                    alert (this.id);
+                }
             });
-    })
+    });
+
 });
 
