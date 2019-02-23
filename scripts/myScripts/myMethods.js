@@ -7,6 +7,7 @@ define(['jquery'],function ($) {
     allMethods.logConsole = function logConsole(value) {
         console.log(value);
     };
+    allMethods.hello = "HelloWorld";
     return allMethods;
 });
 
