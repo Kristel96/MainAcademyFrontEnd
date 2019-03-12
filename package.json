@@ -1,0 +1,9 @@
+{
+  "name": "MainAcademyFrontEnd",
+  "version": "1.0.0",
+  "dependencies": {
+    "gulp-cli": "^2.0.1",
+    "gulp-install": "^1.1.0",
+    "require": "^2.4.20"
+  }
+}

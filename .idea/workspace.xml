@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7d54491-d646-45e5-b062-02160a9387c9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/styles.less" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.less" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +21,11 @@
     <session id="917234747">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="bash" value="1" />
           <entry key="css" value="5" />
-          <entry key="js" value="2" />
+          <entry key="fish" value="1" />
+          <entry key="js" value="6" />
+          <entry key="json" value="1" />
           <entry key="less" value="16" />
           <entry key="ts" value="6" />
         </counts>
@@ -30,64 +33,103 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="5" />
-          <entry key="JavaScript" value="2" />
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="6" />
           <entry key="Less" value="16" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="TypeScript" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="354" />
-          <entry key="html" value="1835" />
-          <entry key="js" value="4675" />
+          <entry key="html" value="1898" />
+          <entry key="js" value="4768" />
           <entry key="less" value="645" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="354" />
-          <entry key="HTML" value="1835" />
-          <entry key="JavaScript" value="4675" />
+          <entry key="HTML" value="1898" />
+          <entry key="JavaScript" value="4768" />
           <entry key="Less" value="645" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.closed" value="23" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="5" />
+          <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.23" value="3" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="20" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.14951165">
+    <splitter split-orientation="horizontal" split-proportion="0.43855608">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/index.html">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/package.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+                <state relative-caret-position="225">
+                  <caret line="9" selection-start-line="9" selection-end-line="9" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/styles/styles.less">
+            <entry file="file://$PROJECT_DIR$/gulpfile.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="175">
-                  <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+                <state relative-caret-position="75">
+                  <caret line="3" column="9" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="9" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/node_modules/gulp-cli/completion/fish">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="100">
+                  <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/node_modules/gulp-cli/completion/bash">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="350">
+                  <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/node_modules/gulp-cli/lib/shared/cli-options.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="206">
+                  <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="274">
+                  <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
                 </state>
               </provider>
             </entry>
@@ -96,22 +138,14 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="311">
-                  <caret line="35" selection-start-line="35" selection-end-line="35" />
+                <state relative-caret-position="249">
+                  <caret line="60" column="37" lean-forward="true" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
                   <folding>
-                    <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -125,6 +159,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="package.json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -148,8 +184,10 @@
         <option value="$PROJECT_DIR$/styles/nav-bar.less" />
         <option value="$PROJECT_DIR$/styles/form.less" />
         <option value="$PROJECT_DIR$/styles/main-content.less" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/styles/styles.less" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scripts/main.js" />
       </list>
     </option>
@@ -165,6 +203,14 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
@@ -198,11 +244,6 @@
               <item name="MainAcademyFrontEnd" type="b2602c69:ProjectViewProjectNode" />
               <item name="MainAcademyFrontEnd" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MainAcademyFrontEnd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MainAcademyFrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -212,7 +253,7 @@
   <component name="PropertiesComponent">
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/InYourCase" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/websockets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -271,11 +312,13 @@
       <workItem from="1548490186609" duration="9745000" />
       <workItem from="1548837456460" duration="10257000" />
       <workItem from="1548952874468" duration="4576000" />
+      <workItem from="1551373752624" duration="22000" />
+      <workItem from="1551378436928" duration="2589000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117964000" />
+    <option name="totallyTimeSpent" value="123238000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -288,8 +331,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49312714" visible="true" weight="0.3298272" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49312714" visible="true" weight="0.17655897" />
       <window_info id="Structure" order="1" sideWeight="0.50687283" side_tool="true" weight="0.25995493" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -301,7 +345,7 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49813014" weight="0.116838485" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.41322315" weight="0.05154639" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.41322315" visible="true" weight="0.054700855" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5161533" side_tool="true" weight="0.0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -388,20 +432,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/gulp-cli/completion/fish">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/gulp-cli/completion/bash">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/gulp-cli/lib/shared/cli-options.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="249">
+          <caret line="60" column="37" lean-forward="true" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        <state relative-caret-position="274">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
         </state>
       </provider>
     </entry>

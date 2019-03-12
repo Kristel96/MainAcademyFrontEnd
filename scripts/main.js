@@ -1,63 +1,63 @@
-$( document ).ready(function() {
-     // GET ALL USERS
-    $(".page").click(function (){
-    var currentPage = this.innerHTML;
-        getColors();
-    });
-    // function getUsers(page){
-    //     $.ajax({
-    //         url: "https://reqres.in/api/users?delay="+page,
-    //         type: "GET",
-    //         success: function(users){
-    //             $("#main-container").empty();
-    //             var currentUsers = users.data;
-    //             for(var i=0; i<currentUsers.length; i++){
-    //                 $("#main-container").append("<div class=\"card\">\n" +
-    //                     "    <img src=\""+currentUsers[i].avatar+"\" class=\"card-img-top\">\n" +
-    //                     "    <div class=\"card-body\">\n" +
-    //                     "        <p class=\"card-text\">"+currentUsers[i].first_name+"</p>\n" +
-    //                     "        <p class=\"card-text\">"+currentUsers[i].last_name+"</p>\n" +
-    //                     "    </div>\n" +
-    //                     "    </div>")
-    //             }
-    //
-    //         }
-    //     });
-    // }
-    function getColors(){
-        $.ajax({
-            url: "https://reqres.in/api/unknown",
-            type: "GET",
-            success: function(users){
-                $("#main-container").empty();
-                var currentUsers = users.data;
-                for(var i=0; i<currentUsers.length; i++){
-                    $("#main-container").append("<div class='cont' style='background-color:"+currentUsers[i].color+"'></div>" +
-                        "<div class='cont'>"+currentUsers[i].name+"</div>" +
-                        "<div class='cont'>"+currentUsers[i].pantone_value+"</div>" +
-                        "<div class='cont'>"+currentUsers[i].year+"</div>" )
-                }
+var wsUri = "wss://echo.websocket.org/";
+var output;
+function sendMessage() {
+    
+}
+function init()
+{
+    output = document.getElementById("output");
+    testWebSocket();
+}
 
-            }
-        });
-    }
+function testWebSocket()
+{
+    websocket = new WebSocket(wsUri);
+    websocket.onopen = function(evt) { onOpen(evt) };
+    websocket.onclose = function(evt) { onClose(evt) };
+    websocket.onmessage = function(evt) { onMessage(evt) };
+    websocket.onerror = function(evt) { onError(evt) };
+}
 
+function onOpen(evt)
+{
+    console.log("Connection Opened");
+    writeToScreen("CONNECTED");
+    doSend("WebSocket rocks");
+}
 
+function onClose(evt)
+{
+    console.log("Connection Closed");
+    writeToScreen("DISCONNECTED");
+}
 
+function onMessage(evt)
+{
+    console.log("Received message");
+    writeToScreen('<span style="color: blue;">RESPONSE: ' + evt.data+'</span>');
+    websocket.close();
+}
 
-            // .done(function( users ) {
-            //     if(users === [] || users === null || users.length ===0){
-            //         return;
-            //     } else
-            //     var mainContainer = $("#main-container");
-            //     mainContainer.empty();
-            //     for(var i=0; i<users.length; i++){
-            //         tableBody.append("<tr><td>" + users[i].username + "</td><td>"+
-            //             users[i].email+"</td><td>"+
-            //             users[i].phone+"</td><td><button class='adressBtn' id='"+users[i].addressLine1+"'>Show Adress</button></td></tr>");
-            //     }
-            //     var allButtons = $(".adressBtn");
-            // });
+function onError(evt)
+{
+    console.log("error occured");
+    writeToScreen('<span style="color: red;">ERROR:</span> ' + evt.data);
+}
 
-});
+function doSend(message)
+{
+    writeToScreen("SENT: " + message);
+    websocket.send(message);
+}
+
+function writeToScreen(message)
+{
+    var pre = document.createElement("p");
+    pre.style.wordWrap = "break-word";
+    pre.innerHTML = message;
+    output.appendChild(pre);
+}
+
+window.addEventListener("load", init, false);
+
 
