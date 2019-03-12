@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<nav class="nav nav-pills nav-fill">
+    <a class="nav-item nav-link" href="#">Active</a>
+    <a class="nav-item nav-link" href="#">Much longer nav link</a>
+    <a class="nav-item nav-link" href="#">Link</a>
+    <a class="nav-item nav-link"><p id="greeting" style="font:20px bold"></p></a>
+</nav>
+<div class="container">
+    <div class="col-6" style="margin: 0 auto;">
+    <input id="title" class="form-control" type="text" placeholder="Title"  style="margin:5px">
+    <input id="imgSRC" class="form-control" type="text" placeholder="Img Link" style="margin:5px">
+    <textarea id="myText" class="form-control" rows="5" style="margin:5px"></textarea>
+    <button id="storyBtn" type="button"  class="btn btn-primary">Save Story</button>
+    <button id="gotoHomePage" type="button"  class="btn btn-success">View Stories on the Homepage</button>
+    </div>
+    <div id="cont"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="scripts/admin.js"></script>
+</body>
+</html>
