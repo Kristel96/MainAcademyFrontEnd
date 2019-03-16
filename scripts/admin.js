@@ -1,5 +1,10 @@
 $( document ).ready(function() {
     var allStories = [];
+    var articles = localStorage.getItem("stories");
+    if(articles!==null || articles!=="undefined"){
+        updateItmes();
+        allStories = JSON.parse(articles);
+    }
 var curentUser = JSON.parse(localStorage.getItem("user"));
 $("#greeting").text("Hello! "+ curentUser.name + " "+ curentUser.surname );
 $("#storyBtn").on("click", function(){
